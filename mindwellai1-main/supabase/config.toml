@@ -1,0 +1,10 @@
+project_id = "glsekgglwptrwoizocxo"
+
+[functions.sentiment-chat]
+verify_jwt = false
+
+[functions.test-api-key]
+verify_jwt = false
+
+[functions.journal-analysis]
+verify_jwt = false

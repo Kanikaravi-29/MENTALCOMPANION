@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* MindWell AI Design System - Professional Mental Health Platform
+All colors MUST be HSL. Calming, trustworthy, accessible design.
+*/
+
+@layer base {
+  :root {
+    /* Core backgrounds - Clean whites with subtle warmth */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    /* Card system - Elevated surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    /* Interactive surfaces */
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Primary - Calming therapeutic blue */
+    --primary: 210 70% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 210 70% 55%;
+    --primary-dark: 210 70% 35%;
+
+    /* Secondary - Soft therapeutic green */
+    --secondary: 150 40% 55%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 150 40% 65%;
+
+    /* Accent - Warm, welcoming orange */
+    --accent: 25 85% 60%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 25 85% 70%;
+
+    /* Muted - Subtle grays with warmth */
+    --muted: 210 15% 95%;
+    --muted-foreground: 215 15% 45%;
+
+    /* Status colors */
+    --success: 150 60% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 45 90% 55%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Interface elements */
+    --border: 210 20% 88%;
+    --input: 210 20% 92%;
+    --ring: 210 70% 45%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Therapeutic gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--muted)) 100%);
+    --gradient-accent: linear-gradient(120deg, hsl(var(--accent)) 0%, hsl(var(--accent-light)) 100%);
+
+    /* Shadows for depth */
+    --shadow-soft: 0 2px 8px hsl(var(--primary) / 0.1);
+    --shadow-medium: 0 4px 16px hsl(var(--primary) / 0.15);
+    --shadow-large: 0 8px 32px hsl(var(--primary) / 0.2);
+
+    /* Animation and transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .dark {
+    /* Dark mode - Gentle, not harsh */
+    --background: 215 30% 8%;
+    --foreground: 210 20% 90%;
+
+    --card: 215 25% 12%;
+    --card-foreground: 210 20% 90%;
+
+    --popover: 215 25% 12%;
+    --popover-foreground: 210 20% 90%;
+
+    --primary: 210 70% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 210 70% 65%;
+
+    --secondary: 150 40% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 215 20% 15%;
+    --muted-foreground: 215 15% 60%;
+
+    --accent: 25 85% 65%;
+    --accent-foreground: 215 30% 8%;
+
+    --border: 215 20% 20%;
+    --input: 215 20% 18%;
+    --ring: 210 70% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
