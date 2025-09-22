@@ -1,6 +1,6 @@
 🌟 Project
 
-AI For Menta Wellness in short a MENTAL COMPANION App is modern web app built with React + TypeScript + Vite, styled using TailwindCSS and shadcn-ui.  
+AI For Mental Wellness in short a MENTAL COMPANION App is modern web app built with React + TypeScript + Vite, styled using TailwindCSS and shadcn-ui.  
 This app focuses on user interaction and mental wellness with authentication, chat, and journaling features.
 
 📌 Features / Pages
